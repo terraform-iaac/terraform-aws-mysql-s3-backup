@@ -1,6 +1,10 @@
 # Global variables
-variable "env" {}
-variable "global_prefix" {}
+variable "env" {
+  description = "Name of environment"
+}
+variable "global_prefix" {
+  description = "Name of project / company/ customer"
+}
 
 # ECR repo
 variable "backup_image_repo" {
